@@ -160,6 +160,41 @@
             font-size: 23px;
             font-weight: bold;
         }
+
+        .company-info-wrapper {
+                position: relative;
+                display: flex;
+                background-color: #f5f5f5;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                border-top: 1.5px solid #d2d2d2;
+            }
+
+            .company-info {
+                padding-left: 70px;
+                width: 100%;
+                background-color: #f5f5f5;
+                display: flex;
+                color: gray;
+                font-weight: bold;
+                line-height: 30px;
+            }
+
+            .laws {
+                position: absolute;
+                color: #6F767D;
+                font-size: 14px;
+                font-weight: normal;
+                right: 0;
+                padding-right: 70px;
+            }
+
+            .laws a {
+                text-decoration: none;
+                color: #6F767D;
+                font-size: 14px;
+                font-weight: normal
+            }
     
     </style>
 </head>
@@ -176,8 +211,8 @@
 
             <div id="menu">
                 <li><a href="camp.html">직무캠프</a></li>
-                <li><a href="#">VLOG</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="vlog.html">VLOG</a></li>
+                <li><a href="about.html">ABOUT</a></li>
                 <li><a href="#">가입/로그인</a></li>
             </div>
         </ul>
@@ -244,7 +279,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div align="right" id="more-info">
             <a href="camp.html">
                 직무 캠프 더보기 
@@ -252,6 +287,28 @@
             </a>
         </div>
     </div>
+
+    <div class="company-info-wrapper">
+        <div class="company-info">
+            <div id="logo">
+                <img src="images/javi_logo.png" style="width: 30px; height: 30px; object-fit: cover; -webkit-filter: grayscale(100%);
+            filter: gray;">
+            </div>
+            &nbsp;&nbsp;YOURJOB
+
+            <div class="infos" style="padding-left: 30px; font-size: 13px; font-weight: normal; line-height: 130%;">
+                대표: 송원영 ㅣ 16229 경기도 수원시 영통구 광교로 145(구:이의동 864-1) 차세대융합기술연구원 ㅣ<br>
+                사업자 등록번호: 528-61-00469 전자상거래 소매업
+            </div>
+        </div>
+
+        <div class="laws">
+            <a href="texts/이용약관.pdf" download="Terms and Conditions"> 이용약관 </a>
+            &nbsp;|&nbsp;
+            <a href="texts/개인정보처리방침.pdf" download="Privacy Policy"> 개인정보처리방침 </a>
+        </div>
+    </div>
+    
 </body>
 
 </html>

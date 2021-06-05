@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="images/javi_logo.png" rel="shortcut icon" type="image/x-icon">
+        <style>
+            /* Noto-sans 적용을 위한 url */
+            @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    
+            body {
+                /* Noto-sans 적용 */
+                font-family: "Noto Sans KR", sans-serif;
+                padding-top: 63px;
+            }
+    
+            nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: white;
+                height: 70px;    
+                display: block;
+                border-bottom: 1.5px solid #d2d2d2;
+            }
+    
+            nav li {
+                display: inline-block;
+            }
+    
+            nav li a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+            }
+    
+            #menu {
+                float: right;
+                padding-top: 11px;
+                margin-right: 30px;
+            }
+    
+            #menu li a {
+                margin-right: 50px;
+            }
+    
+            #menu li a:hover {
+                color: #7E0DE4;
+                text-decoration: none;
+                border-bottom: 5px solid #7E0DE4;
+                padding-bottom: 2px;
+            }
+
+            .upper-screen {
+                background-color: #F9F9F9;
+                padding-top: 30px;
+                border-bottom: 1.5px solid #d2d2d2;
+            }
+
+            .content-name {
+            width: 205px;
+            height: 50px;
+            margin-left: 90px;
+            margin-bottom: 23px;
+            border-radius: 10px;
+            background-color: #D9CEE3;
+            border: 3px solid #F178B6;
+            line-height: 50px;
+            text-align: center;
+            color: #4C4C4C;
+            font-size: 20px;
+            font-weight: bold;
+            }
+
+            .VLOG {
+                display: flex;
+                margin-left: 50px;
+            }
+
+            .VLOG-content {
+                width: 380px;
+                padding-right: 54px;
+            }
+
+            .VLOG img {
+                width: 380px;
+                height: auto;
+                object-fit: cover;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .VLOG a {
+                text-decoration: none;
+            }
+            
+            .VLOG figcaption {
+                width: 373px;
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+                word-break: break-all;
+                border: 3px solid #e5e5e5;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            
+            #more-info {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-right: 50px;           
+            }
+
+            #more-info a {
+                text-decoration: none;
+                color: #7879F1;
+                font-size: 23px;
+                font-weight: bold;
+            }
+
+            .lower-screen {
+                background: linear-gradient( to bottom, #f5f5f5 30%, #C2EBF6 );
+                padding-top: 30px;
+            }
+
+            .company-info-wrapper {
+                position: relative;
+                display: flex;
+                background-color: #f5f5f5;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                border-top: 1.5px solid #d2d2d2;
+            }
+
+            .company-info {
+                padding-left: 70px;
+                width: 100%;
+                background-color: #f5f5f5;
+                display: flex;
+                color: gray;
+                font-weight: bold;
+                line-height: 30px;
+            }
+
+            .laws {
+                position: absolute;
+                color: #6F767D;
+                font-size: 14px;
+                font-weight: normal;
+                right: 0;
+                padding-right: 70px;
+            }
+
+            .laws a {
+                text-decoration: none;
+                color: #6F767D;
+                font-size: 14px;
+                font-weight: normal
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="main.html">
+                        <img src="images/logo_image.png" style="width:150px; height:40px; 
+                    object-fit: cover; padding-left: 50px;" alt="로고 이미지">
+                    </a>
+                </li>
+    
+                <div id="menu">
+                    <li><a href="camp.html">직무캠프</a></li>
+                    <li><a href="vlog.html" style="color: #7E0DE4; font-weight: bold;">VLOG</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">가입/로그인</a></li>
+                </div>
+            </ul>
+        </nav>
+
+
+        <div class="upper-screen">
+            <div class="content-name">
+                삼성 VLOG 몰아보기
+            </div>
+
+            <div class="VLOG">
+                <div class="VLOG-content">
+                    <a href="#">
+                        <figure>
+                            <img src="images/camps/semiconductor_camp.webp">
+                            <figcaption>
+                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
+                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+    
+                <div class="VLOG-content">
+                    <a href="#">
+                        <figure>
+                            <img src="images/camps/semiconductor_camp.webp">
+                            <figcaption>
+                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
+                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+    
+                <div class="VLOG-content">
+                    <a href="#">
+                        <figure>
+                            <img src="images/camps/semiconductor_camp.webp">
+                            <figcaption>
+                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
+                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <div align="right" id="more-info">
+                <a href="#">
+                    삼성 VLOG 더보기
+                    <img src="images/Arrow.png" style="height:20px;width:auto;object-fit:cover;" alt="화살표">
+                </a>
+            </div>
+        </div>
+
+        <div class="lower-screen">
+            <div class="content-name">
+                현재 인기 VLOG
+            </div>
+            <div class="VLOG">
+                <div class="VLOG-content">
+                    <a href="#">
+                        <figure>
+                            <img src="images/camps/semiconductor_camp.webp">
+                            <figcaption>
+                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
+                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+    
+                <div class="VLOG-content">
+                    <a href="#">
+                        <figure>
+                            <img src="images/camps/semiconductor_camp.webp">
+                            <figcaption>
+                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
+                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+    
+                <div class="VLOG-content">
+                    <a href="#">
+                        <figure>
+                            <img src="images/camps/semiconductor_camp.webp">
+                            <figcaption>
+                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
+                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <div align="right" id="more-info">
+                <a href="#">
+                    더 많은 VLOG 보기
+                    <img src="images/Arrow.png" style="height:20px;width:auto;object-fit:cover;" alt="화살표">
+                </a>
+            </div>
+        </div>
+
+        <div class="company-info-wrapper">
+            <div class="company-info">
+                <div id="logo">
+                    <img src="images/javi_logo.png" style="width: 30px; height: 30px; object-fit: cover; -webkit-filter: grayscale(100%);
+                    filter: gray;">
+                </div>
+                &nbsp;&nbsp;YOURJOB
+                
+                <div class="infos" style="padding-left: 30px; font-size: 13px; font-weight: normal; line-height: 130%;">
+                    대표: 송원영 ㅣ 16229 경기도 수원시 영통구 광교로 145(구:이의동 864-1) 차세대융합기술연구원 ㅣ<br>
+                    사업자 등록번호: 528-61-00469 전자상거래 소매업 
+                </div>
+            </div>
+
+            <div class="laws" >
+                <a href= "texts/이용약관.pdf" download="Terms and Conditions"> 이용약관 </a>
+                &nbsp;|&nbsp;
+                <a href= "texts/개인정보처리방침.pdf" download="Privacy Policy"> 개인정보처리방침 </a>
+            </div>
+        </div>
+
+    </body>
+</html>
