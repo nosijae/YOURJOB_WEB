@@ -10,7 +10,7 @@
             body {
                 /* Noto-sans 적용 */
                 font-family: "Noto Sans KR", sans-serif;
-                padding-top: 63px;
+                padding-top: 20px;
             }
     
             nav {
@@ -49,46 +49,81 @@
                 text-decoration: none;
                 border-bottom: 5px solid #7E0DE4;
                 padding-bottom: 2px;
-            }            
-
-            .upper-screen {
-                background: linear-gradient( to bottom, #f5f5f5 30%, #C2EBF6 );
-                text-align: center;
-                padding-top: 50px;
-                padding-bottom: 40px;
-                border-bottom: 1.5px solid #d2d2d2;
-            }  
-
-            .lower-screen {
-                padding-top: 30px;
-                background-color: #f5f5f5;
             }
 
-            .content-name {
-                width: 190px;
-                height: 50px;
-                margin-left: 30px;
-                margin-bottom: 23px;
-                border-radius: 10px;
-                border: 3px solid #F178B6;
-                line-height: 50px;
+            .main-screen {
+                background: linear-gradient( to bottom, #f5f5f5, #C2EBF6 );
                 text-align: center;
+
+            }
+
+            .signin-wrapper p {
+                font-size: 40px;
+                font-weight: bold;
                 color: #4C4C4C;
-                font-size: 25px;
+                padding-top: 45px;
+            }
+
+            .main-screen input {
+                width: 400px;
+                height: 60px;
+                border-radius: 10px;
+                background-color: #C4C4C4;
+                font-size: 20px;
+                color: #FFFFFF;
+                font-weight: bold;
+                border: 0px;
+            }
+
+            .main-screen input::placeholder {
+                color: #FFFFFF;
+                padding: 10px;
+                font-size: 18px;
                 font-weight: bold;
             }
 
-            .partners {
-                display: flex;
-                padding-bottom: 40px;
+            .login-button button{
+                width: 400px;
+                height: 60px;
+                background-color: #4C4C4C;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bolder;
+                color: #FFFFFF;
+                border: 0px;
             }
 
-            .partners img {
-                padding-top: 30px;
-                object-fit: cover;
-                padding-left: 60px;
+            .find-wrapper {
+                float: left;
+                margin-left: 510px;
+                padding-top: 4px;
+            }
+
+            .find-wrapper a { 
+                text-decoration: none;
+                color: #4c4c4c;
+                font-weight: bold;
+                font-size: 14px;
             }
             
+
+            .easier-signin-wrapper p {
+                font-size: 40px;
+                font-weight: bold;
+                color: #4C4C4C;
+            }
+
+            .email-signin button {
+                width: 400px;
+                height: 60px;
+                background-color: #C4C4C4;
+                border-radius: 10px;
+                color: #FFFFFF;
+                font-size: 18px;
+                font-weight: bold;
+                border: 0px;
+            }
+
             .company-info-wrapper {
                 position: relative;
                 display: flex;
@@ -123,8 +158,7 @@
                 font-size: 14px;
                 font-weight: normal
             }
-
-
+            
         </style>
     </head>
 
@@ -141,37 +175,58 @@
                 <div id="menu">
                     <li><a href="camp.html">직무캠프</a></li>
                     <li><a href="vlog.html">VLOG</a></li>
-                    <li><a href="#" style="color: #7E0DE4; font-weight: bold;">ABOUT</a></li>
-                    <li><a href="login.html">가입/로그인</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="login.html" style="color: #7E0DE4; font-weight: bold;">가입/로그인</a></li>
                 </div>
             </ul>
         </nav>
 
-        <div class="upper-screen">
-            <img src="images/logo.png" alt="로고"><br>
-            <img src="images/team.png" alt="팀소개 사진">
-        </div>
-
-        <div class="lower-screen">
-            <div class="content-name">
-                PARTNERS
+        <div class="main-screen">
+            <div class="signin-wrapper">
+                <p>SIGN IN</p>
             </div>
 
-            <div class="partners">
-                <img src="images/partners/국영문혼용시그니춰_상하_N.gif" 
-                style=" width: 200px; height: auto;" alt="외대 로고">
-                
-                <img src="images/partners/futurefound.png"
-                style="width: 305px; height: auto; object-fit: contain;"  alt="futurefound로고">
+            <div class="login-wrapper">
+                <input type="email" name="email" placeholder="이메일"> </input>
+            </div>
+            <br>
 
-                <img src="images/partners/K-startup.png"
-                style="width: 305px; height: auto; object-fit: contain;" alt="학생스타트업 300">
-               
-                <img src="images/partners/Kyung-gi.png"
-                style="width: 305px; height: auto; object-fit: contain;" alt="경기청년포털 로고">
-            </div> 
+            <div class="password-wrapper">
+                <input type="password" placeholder="비밀번호"> </input>
+            </div>
+            <br><br>
+
+            <div class="login-button">
+                <a href="#">
+                    <button>
+                        로그인
+                    </button>
+                </a>
+            </div>
+
+            <div class="find-wrapper">
+                <a href="#">아이디 찾기</a>
+                &nbsp;&nbsp;
+                <a href="#">비밀번호 찾기</a>
+            </div>
+            <br><br><br>
+
+            <div class="easy-sign-in">
+                <a href="#"><img src="images/logo/kakao_login.png"></a><br>
+                <a href="#"><img src="images/logo/naver_login.png"></a><br>
+                <a href="#"><img src="images/logo/facebook_login.png"></a><br>
+                <a href="#"><img src="images/logo/google_login.png"></a>
+            </div>
+
+            <div class="email-signin">
+                <a href="#">
+                    <button>
+                        이메일로 가입하기
+                    </button>
+                </a>
+            </div>
+            <br><br><br>
         </div>
-
 
         <div class="company-info-wrapper">
             <div class="company-info">
@@ -194,6 +249,6 @@
             </div>
         </div>
 
-
     </body>
 </html>
+
