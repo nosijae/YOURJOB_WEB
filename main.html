@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    
+    <title>YOURJOB.main.com</title>
+
     <style>
         @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
         body {
             /* Noto-sans 적용 */
             font-family: "Noto Sans KR", sans-serif;
@@ -18,9 +20,10 @@
             left: 0;
             right: 0;
             background-color: white;
-            height: 70px;    
+            height: 70px;
             display: block;
             border-bottom: 1.5px solid #d2d2d2;
+            z-index: 4;
         }
 
         nav li {
@@ -81,8 +84,8 @@
         }
 
         .ad-img {
-            flex:1;
-            width:50%;
+            flex: 1;
+            width: 50%;
             padding-right: 90px;
             padding-top: 55px;
             padding-bottom: 45px;
@@ -96,18 +99,24 @@
         }
 
         .lower-screen {
-            background: linear-gradient( to bottom, #f5f5f5 30%, #C2EBF6 );
+            background: linear-gradient(to bottom, #f5f5f5 30%, #C2EBF6);
             padding-top: 30px;
+            width: 100%;
+        }
+
+        .content-box {
+            width: 100%;
+            height: 100%;
+            padding-left: 70px;
         }
 
         .content-name {
+            display: inline-block;
             width: 205px;
             height: 50px;
-            margin-left: 90px;
-            margin-bottom: 23px;
             border-radius: 10px;
-            background-color: #D9CEE3;
-            border: 3px solid #F178B6;
+            background-color: #b5e4e5;
+            border: 3px solid #90b6b7;
             line-height: 50px;
             text-align: center;
             color: #4C4C4C;
@@ -115,43 +124,58 @@
             font-weight: bold;
         }
 
-        .camps {
-            display: flex;
-            margin-left: 50px;
+        .images-wrapper {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin-top: 40px;
         }
 
-        .camps-content {
+        .img-container {
+            display: inline-block;
             width: 380px;
-            padding-right: 54px;
+            height: auto;
+            overflow: hidden;
+            margin-right: 30px;
+            margin-left: 30px;
         }
 
-        .camps img {
+        .img-container img {
+            border-radius: 8px;
+            border: #a3bdbd solid 2px;
+            transition: all 0.2s linear;
             width: 380px;
             height: auto;
             object-fit: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
         }
 
-        .camps a {
-            text-decoration: none;
+        .img-container img:hover {
+            transform: scaleX(1.2);
         }
-        
-        .camps figcaption {
-            width: 373px;
+
+        .img-container figcaption {
+            height: 80px;
+        }
+
+        .img-container a {
+            text-decoration: none;
+            text-align: left;
             color: black;
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 17px;
             word-break: break-all;
-            border: 3px solid #e5e5e5;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+        }
+
+        .img-container p {
+            margin: 10px 0px 0px 0px;
+            line-height: 30%;
+            font-weight: bold;
+            color: #66abd5;
         }
 
         #more-info {
             padding-top: 15px;
             padding-bottom: 15px;
-            padding-right: 50px;           
+            padding-right: 50px;
         }
 
         #more-info a {
@@ -162,40 +186,39 @@
         }
 
         .company-info-wrapper {
-                position: relative;
-                display: flex;
-                background-color: #f5f5f5;
-                padding-top: 20px;
-                padding-bottom: 10px;
-                border-top: 1.5px solid #d2d2d2;
-            }
+            position: relative;
+            display: flex;
+            background-color: #f5f5f5;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-top: 1.5px solid #d2d2d2;
+        }
 
-            .company-info {
-                padding-left: 70px;
-                width: 100%;
-                background-color: #f5f5f5;
-                display: flex;
-                color: gray;
-                font-weight: bold;
-                line-height: 30px;
-            }
+        .company-info {
+            padding-left: 70px;
+            width: 100%;
+            background-color: #f5f5f5;
+            display: flex;
+            color: gray;
+            font-weight: bold;
+            line-height: 30px;
+        }
 
-            .laws {
-                position: absolute;
-                color: #6F767D;
-                font-size: 14px;
-                font-weight: normal;
-                right: 0;
-                padding-right: 70px;
-            }
+        .laws {
+            position: absolute;
+            color: #6F767D;
+            font-size: 14px;
+            font-weight: normal;
+            right: 0;
+            padding-right: 70px;
+        }
 
-            .laws a {
-                text-decoration: none;
-                color: #6F767D;
-                font-size: 14px;
-                font-weight: normal
-            }
-    
+        .laws a {
+            text-decoration: none;
+            color: #6F767D;
+            font-size: 14px;
+            font-weight: normal
+        }
     </style>
 </head>
 
@@ -231,58 +254,53 @@
             <a href="#"><img src="images/play_store.png" alt="플레이스토어 이미지"></img></a>
             <a href="#"><img src="images/app_store.png" alt="앱스토어 이미지"></img></a>
         </div>
-        
+
         <div class="ad-img">
             <img src="images/app-ad.png" alt="어플 홍보 이미지">
         </div>
     </div>
 
     <div class="lower-screen">
-        <div class="content-name">
-            오늘 마감 직무 캠프
+        <div class="content-box">
+            <div class="content-name">
+                오늘 마감 직무 캠프
+            </div>
         </div>
-        
-        <div class="camps">
-            <div class="camps-content">
+        <div class="images-wrapper">
+            <div class="img-container">
                 <a href="#">
-                    <figure>
-                        <img src="images/camps/semiconductor_camp.webp">
-                        <figcaption>
-                            [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                            [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                        </figcaption>
-                    </figure>
+                    <img src="images/camps/RYZEN.jpg">
+                    <figcaption>
+                        <p>연구개발</p><br>
+                        반도체 회로설계 현직자와 실무체험을 통해 직무이해 높이기
+                    </figcaption>
                 </a>
             </div>
 
-            <div class="camps-content">
+            <div class="img-container">
                 <a href="#">
-                    <figure>
-                        <img src="images/camps/semiconductor_camp.webp">
-                        <figcaption>
-                            [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                            [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                        </figcaption>
-                    </figure>
+                    <img src="images/camps/real_estate.jpg">
+                    <figcaption>
+                        <p>건설/기계/기술</p><br>
+                        부동산 개발, 사업성 및 리스크 분석 등 부동산 개발 실무 직접 체험하기
+                    </figcaption>
                 </a>
             </div>
 
-            <div class="camps-content">
+            <div class="img-container">
                 <a href="#">
-                    <figure>
-                        <img src="images/camps/semiconductor_camp.webp">
-                        <figcaption>
-                            [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                            [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                        </figcaption>
-                    </figure>
+                    <img src="images/camps/data_analysis.jpg">
+                    <figcaption>
+                        <p>마케팅</p><br>
+                        철저한 Data분석, 소통이 중요한 식품회사 마케팅 실무 체험하기
+                    </figcaption>
                 </a>
             </div>
         </div>
 
         <div align="right" id="more-info">
             <a href="camp.html">
-                직무 캠프 더보기 
+                모집 캠프 더보기
                 <img src="images/Arrow.png" style="height:20px;width:auto;object-fit:cover;" alt="화살표">
             </a>
         </div>
@@ -308,7 +326,7 @@
             <a href="texts/개인정보처리방침.zip" download> 개인정보처리방침 </a>
         </div>
     </div>
-    
+
 </body>
 
 </html>

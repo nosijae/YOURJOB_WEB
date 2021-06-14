@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="images/javi_logo.png" rel="shortcut icon" type="image/x-icon">
+    <title>YOURJOB.camp.com</title>
     <style>
         /* Noto-sans 적용을 위한 url */
         @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -22,6 +22,7 @@
             height: 70px;
             display: block;
             border-bottom: 1.5px solid #d2d2d2;
+            z-index: 4;
         }
 
         nav li {
@@ -51,7 +52,7 @@
             padding-bottom: 2px;
         }
 
-        .img-text p {
+        .content-account p {
             width: 380px;
             height: auto;
             word-break: break-all;
@@ -60,23 +61,27 @@
             padding-top: 80px;
             padding-left: 80px;
             color: #4C4C4C;
-            ;
         }
 
         .lower-screen {
             background-color: #F9F9F9;
             width: 100%;
-            padding-top: 40px;
+        }
+
+        .content-box {
+            width: 100%;
+            height: 100%;
+            text-align: center;
         }
 
         .content-name {
+            display: inline-block;
             width: 205px;
             height: 50px;
-            margin-left: 90px;
-            margin-bottom: 23px;
+            margin-top: 40px;
             border-radius: 10px;
-            background-color: #D9CEE3;
-            border: 3px solid #F178B6;
+            background-color: #b5e4e5;
+            border: 3px solid #90b6b7;
             line-height: 50px;
             text-align: center;
             color: #4C4C4C;
@@ -84,37 +89,52 @@
             font-weight: bold;
         }
 
-        .camps {
-            display: flex;
-            margin-left: 50px;
+        .images-wrapper {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin-top: 40px;
         }
 
-        .camps-content {
+        .img-container {
+            display: inline-block;
             width: 380px;
-            padding-right: 54px;
+            height: auto;
+            overflow: hidden;
+            margin-right: 30px;
+            margin-left: 30px;
         }
 
-        .camps img {
+        .img-container img {
+            border-radius: 8px;
+            border: #a3bdbd solid 2px;
+            transition: all 0.2s linear;
             width: 380px;
             height: auto;
             object-fit: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
         }
 
-        .camps a {
+        .img-container img:hover {
+            transform: scaleX(1.2);
+        }
+
+        .img-container figcaption {
+            height: 80px;
+        }
+
+        .img-container a {
             text-decoration: none;
+            text-align: left;
+            color: black;
+            font-size: 17px;
+            word-break: break-all;
         }
 
-        .camps figcaption {
-            width: 373px;
-            color: black;
-            font-size: 18px;
+        .img-container p {
+            margin: 10px 0px 0px 0px;
+            line-height: 30%;
             font-weight: bold;
-            word-break: break-all;
-            border: 3px solid #e5e5e5;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            color: #66abd5;
         }
 
         #more-info {
@@ -163,6 +183,7 @@
             font-size: 14px;
             font-weight: normal
         }
+
     </style>
 </head>
 
@@ -185,202 +206,182 @@
         </ul>
     </nav>
 
-    <div class="img-wrap">
-        <div class="img-text" style=" width: 100%; height: 400px; background-color: #E07F4E;">
+    <div class="content-image">
+        <div class="content-account" style=" width: 100%; height: 400px; background-color: #c3e9ea;">
             <p>실제 직장인에게 배우는 직무 캠프</p>
         </div>
+    </div>
 
-        <div class="lower-screen">
+    <div class="lower-screen">
+
+        <div class="content-box">
             <div class="content-name">
                 추천 직무 캠프
             </div>
+        </div>
 
-            <div class="camps">
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+        <div class="images-wrapper">
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/brand_marketing.jpg">
+                    <figcaption>
+                        <p>마케팅</p><br>
+                        국내 1위 외식 브랜드마케터와 함께하는 브랜드 마케팅 실무
+                    </figcaption>
+                </a>
             </div>
-
-            <div class="camps">
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/data_manager.jpg">
+                    <figcaption>
+                        <p>IT/SW</p><br>
+                        SQL 입문부터 활용까지 - 데이터 분석 <br>
+                        보고서 작성과 대시보드 개발
+                    </figcaption>
+                </a>
             </div>
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/product_managing.jpg">
+                    <figcaption>
+                        <p>생산/제조</p><br>
+                        대기업 현직자와 알기 쉽게 이해하는 생산기술 생산관리의 핵심
+                    </figcaption>
+                </a>
+            </div>
+        </div>
 
-            <div class="content-name" style="margin-top: 30px;">
+        <div class="images-wrapper">
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/semiconductor.jpg">
+                    <figcaption>
+                        <p>생산/제조</p><br>
+                        반도체 회사 현직자와 함께 제조기술 실무 이해하기
+                    </figcaption>
+                </a>
+            </div>
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/money_manager.jpg">
+                    <figcaption>
+                        <p>금융/은행/보험</p><br>
+                        금융공기업 심사역이 되어 대한민국의 수출기업들을 직접 지원해보기
+                    </figcaption>
+                </a>
+            </div>
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/data_marketing.jpg">
+                    <figcaption>
+                        <p>마케팅</p><br>
+                        OO전자 출신 현직자의 Fact와 Data기반 마케팅 실무
+                    </figcaption>
+                </a>
+            </div>
+        </div>
+
+        <hr color="#b5e4e5">
+
+        <div class="content-box">
+            <div class="content-name">
                 오늘 마감 직무 캠프
             </div>
+        </div>
 
-            <div class="camps">
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-
-            <div class="camps">
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="camps-content">
-                    <a href="#">
-                        <figure>
-                            <img src="images/camps/semiconductor_camp.webp">
-                            <figcaption>
-                                [제조]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;온/오프라인 가능<br><br>
-                                [4차 앵콜] S 반도체 출신 멘토와 함께하는 설비엔지니어 직무 체험
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-
-            <div align="right" id="more-info">
+        <div class="images-wrapper">
+            <div class="img-container">
                 <a href="#">
-                    모집 캠프 더보기
-                    <img src="images/Arrow.png" style="height:20px;width:auto;object-fit:cover;" alt="화살표">
+                    <img src="images/camps/RYZEN.jpg">
+                    <figcaption>
+                        <p>연구개발</p><br>
+                        반도체 회로설계 현직자와 실무체험을 통해 직무이해 높이기
+                    </figcaption>
                 </a>
             </div>
 
-
-        </div>
-
-        <div class="company-info-wrapper">
-            <div class="company-info">
-                <div id="logo">
-                    <img src="images/javi_logo.png" style="width: 30px; height: 30px; object-fit: cover; -webkit-filter: grayscale(100%);
-                filter: gray;">
-                </div>
-                &nbsp;&nbsp;YOURJOB
-
-                <div class="infos" style="padding-left: 30px; font-size: 13px; font-weight: normal; line-height: 130%;">
-                    대표: 송원영 ㅣ 16229 경기도 수원시 영통구 광교로 145(구:이의동 864-1) 차세대융합기술연구원 ㅣ<br>
-                    사업자 등록번호: 528-61-00469 전자상거래 소매업
-                </div>
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/real_estate.jpg">
+                    <figcaption>
+                        <p>건설/기계/기술</p><br>
+                        부동산 개발, 사업성 및 리스크 분석 등 부동산 개발 실무 직접 체험하기
+                    </figcaption>
+                </a>
             </div>
 
-            <div class="laws">
-                <a href="texts/이용약관.pdf" download="Terms and Conditions"> 이용약관 </a>
-                &nbsp;|&nbsp;
-                <a href="texts/개인정보처리방침.pdf" download="Privacy Policy"> 개인정보처리방침 </a>
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/data_analysis.jpg">
+                    <figcaption>
+                        <p>마케팅</p><br>
+                        철저한 Data분석, 소통이 중요한 식품회사 마케팅 실무 체험하기
+                    </figcaption>
+                </a>
             </div>
         </div>
+
+        <div class="images-wrapper">
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/brand_marketing.jpg">
+                    <figcaption>
+                        <p>마케팅</p><br>
+                        국내 1위 외식 브랜드마케터와 함께하는 브랜드 마케팅 실무
+                    </figcaption>
+                </a>
+            </div>
+
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/data_manager.jpg">
+                    <figcaption>
+                        <p>IT/SW</p><br>
+                        SQL 입문부터 활용까지 - 데이터 분석 <br>
+                        보고서 작성과 대시보드 개발
+                    </figcaption>
+                </a>
+            </div>
+
+            <div class="img-container">
+                <a href="#">
+                    <img src="images/camps/product_managing.jpg">
+                    <figcaption>
+                        <p>생산/제조</p><br>
+                        대기업 현직자와 알기 쉽게 이해하는 생산기술 생산관리의 핵심
+                    </figcaption>
+                </a>
+            </div>
+        </div>
+
+        <div align="right" id="more-info">
+            <a href="#">
+                모집 캠프 더보기
+                <img src="images/Arrow.png" style="height:20px;width:auto;object-fit:cover;" alt="화살표">
+            </a>
+        </div>
+    </div>
+
+    <div class="company-info-wrapper">
+        <div class="company-info">
+            <div id="logo">
+                <img src="images/javi_logo.png" style="width: 30px; height: 30px; object-fit: cover; -webkit-filter: grayscale(100%);
+            filter: gray;">
+            </div>
+            &nbsp;&nbsp;YOURJOB
+
+            <div class="infos" style="padding-left: 30px; font-size: 13px; font-weight: normal; line-height: 130%;">
+                대표: 송원영 ㅣ 16229 경기도 수원시 영통구 광교로 145(구:이의동 864-1) 차세대융합기술연구원 ㅣ<br>
+                사업자 등록번호: 528-61-00469 전자상거래 소매업
+            </div>
+        </div>
+
+        <div class="laws">
+            <a href="texts/이용약관.zip" download> 이용약관 </a>
+            &nbsp;|&nbsp;
+            <a href="texts/개인정보처리방침.zip" download> 개인정보처리방침 </a>
+        </div>
+    </div>
 
 </body>
 
